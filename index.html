@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Hi there! This is a Lunr.js test page</h1>
+
+    <p>
+      I built this to test out Lunr.js search. You can load your own index down
+      below. A demo
+      <a href="https://lunrjs-testpage.glitch.me/index.json"
+        >index file</a
+      >
+      is loaded by default.
+    </p>
+
+    <form>
+      <label for="index_url">Index URL</label>
+      <input
+        type="url"
+        id="index_url"
+        name="index_url"
+        value="https://lunrjs-testpage.glitch.me/index.json"
+      />
+      <input type="button" id="load-index-btn" value="Load Index" />
+    </form>
+
+    <hr />
+
+    <form>
+      <label for="search_term">Search term</label>
+      <input type="search" id="search-term" value="" />
+      <input type="button" id="search-btn" value="Search" />
+    </form>
+
+    <h2>Results: <span id="result-count">0</span></h2>
+    <ol id="result"></ol>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>

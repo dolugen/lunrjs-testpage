@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Lunr",
+    "text": "Like Solr, but much smaller, and not as bright."
+  },
+  {
+    "name": "ElasticSearch",
+    "text": "Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents."
+  },
+  {
+    "name": "Lucene",
+    "text": "Apache Lucene is a free and open-source search engine software library, originally written completely in Java by Doug Cutting."
+  }
+]
